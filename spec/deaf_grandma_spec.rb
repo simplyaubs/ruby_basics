@@ -20,7 +20,7 @@ describe "DeafGrandma" do
   end
 
   it "prints random years between 1930 and 1950" do
-    
+
     10.times do
       run_script("deaf_grandma.rb")
       type("BLAH")
