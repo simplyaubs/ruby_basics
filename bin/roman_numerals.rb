@@ -20,11 +20,14 @@ roman_num = {
 }
 
 while num > 0
+  do_break = false
   roman_num.each do |key, value|
     if num >= key
       output = output + value
       num -= key
+      do_break = true
     end
+    break if do_break
   end
 end
 
